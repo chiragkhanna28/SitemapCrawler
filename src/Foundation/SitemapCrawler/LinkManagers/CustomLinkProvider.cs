@@ -18,7 +18,7 @@ namespace SitemapCrawler.LinkManagers
         {
             if (item != null && item.TemplateName.Equals(Constants.ArticlePage, StringComparison.OrdinalIgnoreCase))
             {
-                return "/Articles" + item.Name.Replace(" ", "-");
+                return string.Format("/{0}/{1}", Constants.ArticlesUrl, item.Name.Replace(" ", "-");
             }
             return base.GetItemUrl(item, options);
         }
