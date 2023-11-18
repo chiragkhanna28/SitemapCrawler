@@ -13,12 +13,11 @@ namespace SitemapCrawler.LinkManagers
         public CustomLinkProvider() : base(ServiceLocator.ServiceProvider.GetService<BaseFactory>())
         {
         }
-
         public override string GetItemUrl(Item item, ItemUrlBuilderOptions options)
         {
             if (item != null && item.TemplateName.Equals(Constants.ArticlePage, StringComparison.OrdinalIgnoreCase))
             {
-                return string.Format("/{0}/{1}", Constants.ArticlesUrl, item.Name.Replace(" ", "-");
+                return string.Format("/{0}/{1}", Constants.ArticlesUrl, item.Name.Replace(" ", "-"));
             }
             return base.GetItemUrl(item, options);
         }
