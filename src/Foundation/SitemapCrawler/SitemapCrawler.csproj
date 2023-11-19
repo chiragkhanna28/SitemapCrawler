@@ -56,6 +56,9 @@
     <Reference Include="Sitecore.Mvc">
       <HintPath>..\..\..\lib\Sitecore.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Services.GraphQL.EdgeSchema">
+      <HintPath>..\..\..\lib\Sitecore.Services.GraphQL.EdgeSchema.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.XA.Foundation.Multisite">
       <HintPath>..\..\..\lib\Sitecore.XA.Foundation.Multisite.dll</HintPath>
     </Reference>
@@ -88,6 +91,7 @@
     <Compile Include="Constants.cs" />
     <Compile Include="LinkManagers\CustomLinkProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CustomContentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Foundation\z.SitemapCrawler.config" />
